@@ -1,3 +1,18 @@
+#!/usr/bin/env python3
+# coding: utf-8
+
+'''
+Mouse cursor tracking
+
+Dependencies:
+- pyautogui
+
+Authors:
+- Kayhan Latifzadeh <name.surname@uni.lu>
+- Luis Leiva <name.surname@uni.lu>
+'''
+
+
 # Load std libs.
 import time
 import argparse
