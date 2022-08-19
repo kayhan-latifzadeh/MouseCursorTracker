@@ -13,4 +13,4 @@ Simply run the below command in a terminal:
 ```sh
 python tracker.py --sampling_rate 50
 ```
-The `--sampling_rate` is optional and by default is 60 Hz.
+The `--sampling_rate` is optional and by default is 60 Hz. In order to stop recording, press `ctrl-c` in the same terminal you started the tracker.
