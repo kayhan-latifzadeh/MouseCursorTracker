@@ -7,4 +7,4 @@ Simply run the below command in a terminal:
 ```sh
 python tracker.py --sampling_rate 50
 ```
-The `--sampling_rate` is optional and by default is 50 Hz.
+The `--sampling_rate` is optional and by default is 60 Hz.
