@@ -3,8 +3,9 @@
 Simple mouse cursor tracker; compatible with Linux and MS Windows operating systems. It be used in a variety of research studies such as HCI, psychology, and cognitive studies.
 
 # Dependencies
+In order to use MouseCursorTracker, you have to install [PyAutoGUI](https://pypi.org/project/PyAutoGUI/):
 ```sh
-ip install PyAutoGUI==0.9.53
+pip install PyAutoGUI==0.9.53
 ```
 
 # How to Run?
