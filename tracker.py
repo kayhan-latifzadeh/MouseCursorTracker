@@ -37,14 +37,14 @@ file_name = "LOG_" + str(ts) + ".csv"
 log_file = open(file_name, 'w')
 
 # writing the header row
-log_file.write('time_stamp\tx\ty\n')
+log_file.write('time_stamp, x, y\n')
 
 try:
     print("Mouse cursor recording started. Press ctrl-c to stop recording!\n")
     while True:
         currentMouseX, currentMouseY = pyautogui.position()
         ts = time.time()
-        sample = "{ts}\t{x}\t{y}\n".format(ts = ts, x = currentMouseX, y = currentMouseY)
+        sample = "{ts}, {x}, {y}\n".format(ts = ts, x = currentMouseX, y = currentMouseY)
         log_file.write(sample)
         time.sleep(1/args.sampling_rate)
 except KeyboardInterrupt:
