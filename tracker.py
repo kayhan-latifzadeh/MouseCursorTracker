@@ -40,7 +40,7 @@ log_file = open(file_name, 'w')
 log_file.write('time_stamp\tx\ty\n')
 
 try:
-    print("Mouse cursor recording started. Press ctrl+c to stop recording!\n")
+    print("Mouse cursor recording started. Press ctrl-c to stop recording!\n")
     while True:
         currentMouseX, currentMouseY = pyautogui.position()
         ts = time.time()
