@@ -23,7 +23,7 @@ parser = argparse.ArgumentParser(description='Record mouse cursor position in re
   formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
 parser.add_argument('--sampling_rate', default=60, type=int, help='sampling rate to record cursor position')
-parser.add_argument('--slog_file_prefix', default="MC_LOG", help='sampling rate to record cursor position')
+parser.add_argument('--log_file_prefix', default="MC_LOG", help='sampling rate to record cursor position')
 args = parser.parse_args()
 
 
@@ -33,7 +33,7 @@ import pyautogui
 
 # timestamp of the start of recording is a part of the filename
 ts = time.time()
-file_name = args.slog_file_prefix + "_" + str(ts) + ".csv"
+file_name = args.log_file_prefix + "_" + str(ts) + ".csv"
 log_file = open(file_name, 'w')
 
 # writing the header row
