@@ -33,7 +33,7 @@ import pyautogui
 
 # timestamp of the start of recording is a part of the filename
 ts = time.time()
-file_name = "MC_LOG_" + str(ts) + ".csv"
+file_name = args.slog_file_prefix + "_" + str(ts) + ".csv"
 log_file = open(file_name, 'w')
 
 # writing the header row
